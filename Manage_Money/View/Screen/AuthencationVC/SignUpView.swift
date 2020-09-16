@@ -37,7 +37,7 @@ struct SignUpView: View {
                 
                 Button(action: {
                     self.userData.isShowLoading.toggle()
-                    self.session.signUp(email: self.model.emailSignup, password: self.model.passwordSignUp) { (result, error) in
+                    self.session.signUp(email: self.userData.email, password: self.userData.password) { (result, error) in
                         if let error = error{
                             print(error)
                         }else{
@@ -45,7 +45,7 @@ struct SignUpView: View {
                             self.model.passwordSignUp = ""
                             self.model.rePasswordSignUp = ""
                         }
-                        
+
                     }
                 }) {
                     Text("SIGNUP")

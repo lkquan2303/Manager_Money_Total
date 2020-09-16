@@ -35,7 +35,6 @@ struct SignInView: View {
                     .padding(.horizontal)
                     Button(action: {
                         withAnimation {
-                            print("view \(self.authenModel.name.value)")
                             self.userData.isShowLoading = true
                             self.authenModel.action.send(.gotoHome)
                         }
@@ -55,7 +54,6 @@ struct SignInView: View {
                         Button(action: {
                             withAnimation{
                                 //                                self.isShowSignUp = true
-                                print("view \(self.authenModel.name)")
                                 self.userData.isSignUp = true
                             }
                         }) {

@@ -10,10 +10,9 @@ import Foundation
 import Combine
 import SwiftUI
 class AuthenViewModel: ObservableObject{
-    @EnvironmentObject var session: AuthenSessionStore
+    @ObservedObject var session: AuthenSessionStore = .share
     @ObservedObject var userData : UserData = .shared
     var subscriptions = Set<AnyCancellable>()
-    var authenAction = AuthenSessionStore()
     let action = PassthroughSubject<Action, Never>()
     let state = CurrentValueSubject<State, Never>(.initial)
     let name = CurrentValueSubject<String, Never>("")
@@ -27,7 +26,6 @@ class AuthenViewModel: ObservableObject{
         action.sink(receiveValue: { [weak self] action in
             self?.processAction(action)
         }).store(in: &subscriptions)
-        
     }
     enum State{
         case initial
@@ -41,7 +39,8 @@ class AuthenViewModel: ObservableObject{
         switch state {
         case .initial:
 //            name.value = userData.email
-//            password.value = userData.password
+            name.assign(to: \.userData.email, on: self).store(in: &subscriptions)
+            password.value = userData.password
             errorText.value = nil
         case .error(let message):
             errorText.value = message
@@ -51,8 +50,16 @@ class AuthenViewModel: ObservableObject{
         switch action {
         case .gotoHome:
             print("gotoHome")
-            session.signIn(handle: <#T##AuthDataResultCallback##AuthDataResultCallback##(AuthDataResult?, Error?) -> Void#>)
+            session.signIn(email: self.userData.email, password: self.userData.password) { (auth, err) in
+                if let err = err{
+                    print(err)
+                }else{
+                    self.userData.isShowLoading = false
+                }
+            }
+            print("Pass: \(userData.password)")
             print("VM: \(userData.email)")
+            print("Local \(name.value)")
         case .gotoLogin:
             print("gotologin")
         }

@@ -12,7 +12,7 @@ import Combine
 import Firebase
 
 class AuthenSessionStore: ObservableObject{
-    @EnvironmentObject var userData: UserData
+    static let share = AuthenSessionStore()
     var didChange = PassthroughSubject<AuthenSessionStore, Never>()
     var handle: AuthStateDidChangeListenerHandle?
     @Published var session: User? {didSet {self.didChange.send(self)}}
@@ -25,11 +25,11 @@ class AuthenSessionStore: ObservableObject{
             }
         })
     }
-    func signUp(handle: @escaping AuthDataResultCallback){
-        Auth.auth().createUser(withEmail: userData.email, password: userData.password, completion: handle)
+    func signUp(email: String, password: String, handle: @escaping AuthDataResultCallback){
+        Auth.auth().createUser(withEmail: email, password: password, completion: handle)
     }
-    func signIn(handle: @escaping AuthDataResultCallback){
-        Auth.auth().signIn(withEmail: userData.email, password: userData.password, completion: handle)
+    func signIn(email: String, password: String, handle: @escaping AuthDataResultCallback){
+        Auth.auth().signIn(withEmail: email, password: password, completion: handle)
     }
     func signOut(){
         do{
