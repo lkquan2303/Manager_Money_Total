@@ -3,19 +3,46 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		161296C8250CFA5500552756 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161296C7250CFA5500552756 /* ErrorView.swift */; };
+		1620A0B1250F179D0054D5A3 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1620A0B0250F179D0054D5A3 /* UserModel.swift */; };
+		1620A0B3250F17DB0054D5A3 /* AuthenSessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1620A0B2250F17DB0054D5A3 /* AuthenSessionStore.swift */; };
+		1620A0B6250F27FF0054D5A3 /* LoadingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1620A0B5250F27FF0054D5A3 /* LoadingPageView.swift */; };
+		1620A0BB250F62CD0054D5A3 /* AuthenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1620A0BA250F62CD0054D5A3 /* AuthenViewModel.swift */; };
 		1633935C2502269A00A7A9D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1633935B2502269A00A7A9D8 /* AppDelegate.swift */; };
 		1633935E2502269A00A7A9D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1633935D2502269A00A7A9D8 /* SceneDelegate.swift */; };
 		163393602502269A00A7A9D8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1633935F2502269A00A7A9D8 /* ContentView.swift */; };
 		163393622502269B00A7A9D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 163393612502269B00A7A9D8 /* Assets.xcassets */; };
 		163393652502269B00A7A9D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 163393642502269B00A7A9D8 /* Preview Assets.xcassets */; };
 		163393682502269B00A7A9D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 163393662502269B00A7A9D8 /* LaunchScreen.storyboard */; };
+		1635B1E4250536B00036F449 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1635B1E3250536B00036F449 /* GoogleService-Info.plist */; };
+		1635B1E6250538D70036F449 /* FLoginApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1635B1E5250538D70036F449 /* FLoginApp.swift */; };
+		166D00272506137600A93AA7 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166D00262506137600A93AA7 /* SignUpView.swift */; };
+		166D00292506138B00A93AA7 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166D00282506138B00A93AA7 /* SignInView.swift */; };
+		166D002C250613B900A93AA7 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166D002B250613B900A93AA7 /* CustomTextField.swift */; };
+		166D002F250613E700A93AA7 /* FLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166D002E250613E700A93AA7 /* FLogin.swift */; };
+		166D00362506954B00A93AA7 /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166D00352506954B00A93AA7 /* HomePageView.swift */; };
+		166D003925069B4500A93AA7 /* MoneySpendingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166D003825069B4500A93AA7 /* MoneySpendingView.swift */; };
+		166D003B25069B5900A93AA7 /* MoneyReceivedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166D003A25069B5900A93AA7 /* MoneyReceivedView.swift */; };
+		166D003D25069BD100A93AA7 /* DayPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166D003C25069BD100A93AA7 /* DayPickerView.swift */; };
+		167253C525072179009C249B /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167253C425072179009C249B /* HeaderView.swift */; };
+		167253C7250726D9009C249B /* NumberTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167253C6250726D9009C249B /* NumberTextField.swift */; };
+		167253CA2507295D009C249B /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167253C92507295D009C249B /* ViewExtension.swift */; };
+		167253CE25077129009C249B /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167253CD25077129009C249B /* Images.swift */; };
+		167253D125077746009C249B /* QGrid in Frameworks */ = {isa = PBXBuildFile; productRef = 167253D025077746009C249B /* QGrid */; };
+		167253D625078F99009C249B /* CustomSpendingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167253D525078F99009C249B /* CustomSpendingItem.swift */; };
+		AE5EF3F2D15DBA636E56FB48 /* Pods_Manage_Money.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6718C4D68663C973EEC9A869 /* Pods_Manage_Money.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		161296C7250CFA5500552756 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		1620A0B0250F179D0054D5A3 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		1620A0B2250F17DB0054D5A3 /* AuthenSessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenSessionStore.swift; sourceTree = "<group>"; };
+		1620A0B5250F27FF0054D5A3 /* LoadingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingPageView.swift; sourceTree = "<group>"; };
+		1620A0BA250F62CD0054D5A3 /* AuthenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenViewModel.swift; sourceTree = "<group>"; };
 		163393582502269A00A7A9D8 /* Manage_Money.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Manage_Money.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1633935B2502269A00A7A9D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1633935D2502269A00A7A9D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +51,24 @@
 		163393642502269B00A7A9D8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		163393672502269B00A7A9D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		163393692502269B00A7A9D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1635B1E3250536B00036F449 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1635B1E5250538D70036F449 /* FLoginApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLoginApp.swift; sourceTree = "<group>"; };
+		166D00262506137600A93AA7 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		166D00282506138B00A93AA7 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		166D002B250613B900A93AA7 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		166D002E250613E700A93AA7 /* FLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLogin.swift; sourceTree = "<group>"; };
+		166D00352506954B00A93AA7 /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
+		166D003825069B4500A93AA7 /* MoneySpendingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneySpendingView.swift; sourceTree = "<group>"; };
+		166D003A25069B5900A93AA7 /* MoneyReceivedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyReceivedView.swift; sourceTree = "<group>"; };
+		166D003C25069BD100A93AA7 /* DayPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayPickerView.swift; sourceTree = "<group>"; };
+		167253C425072179009C249B /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		167253C6250726D9009C249B /* NumberTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberTextField.swift; sourceTree = "<group>"; };
+		167253C92507295D009C249B /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		167253CD25077129009C249B /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		167253D525078F99009C249B /* CustomSpendingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSpendingItem.swift; sourceTree = "<group>"; };
+		6718C4D68663C973EEC9A869 /* Pods_Manage_Money.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Manage_Money.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ED61A564356A754D4AA3EA1 /* Pods-Manage_Money.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Manage_Money.release.xcconfig"; path = "Target Support Files/Pods-Manage_Money/Pods-Manage_Money.release.xcconfig"; sourceTree = "<group>"; };
+		ACA0638326C6D6DEB12C6F13 /* Pods-Manage_Money.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Manage_Money.debug.xcconfig"; path = "Target Support Files/Pods-Manage_Money/Pods-Manage_Money.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +76,64 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				167253D125077746009C249B /* QGrid in Frameworks */,
+				AE5EF3F2D15DBA636E56FB48 /* Pods_Manage_Money.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		161296C2250C6B7400552756 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1620A0AD250F133B0054D5A3 /* AuthencationVM */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1620A0AD250F133B0054D5A3 /* AuthencationVM */ = {
+			isa = PBXGroup;
+			children = (
+				1620A0B2250F17DB0054D5A3 /* AuthenSessionStore.swift */,
+				1620A0BA250F62CD0054D5A3 /* AuthenViewModel.swift */,
+			);
+			path = AuthencationVM;
+			sourceTree = "<group>";
+		};
+		1620A0B7250F53110054D5A3 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				1620A0B0250F179D0054D5A3 /* UserModel.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		1620A0B8250F53330054D5A3 /* AuthencationVC */ = {
+			isa = PBXGroup;
+			children = (
+				166D00262506137600A93AA7 /* SignUpView.swift */,
+				166D00282506138B00A93AA7 /* SignInView.swift */,
+			);
+			path = AuthencationVC;
+			sourceTree = "<group>";
+		};
+		1620A0B9250F534B0054D5A3 /* HomepageVC */ = {
+			isa = PBXGroup;
+			children = (
+				166D003725069B0E00A93AA7 /* HomePageItemView */,
+				167253C325072164009C249B /* Components */,
+			);
+			path = HomepageVC;
+			sourceTree = "<group>";
+		};
 		1633934F2502269A00A7A9D8 = {
 			isa = PBXGroup;
 			children = (
 				1633935A2502269A00A7A9D8 /* Manage_Money */,
 				163393592502269A00A7A9D8 /* Products */,
+				8B3CDD1F71439913313A04A4 /* Pods */,
+				3F61EBE3456E0D238F18A119 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,13 +148,17 @@
 		1633935A2502269A00A7A9D8 /* Manage_Money */ = {
 			isa = PBXGroup;
 			children = (
-				1633935B2502269A00A7A9D8 /* AppDelegate.swift */,
-				1633935D2502269A00A7A9D8 /* SceneDelegate.swift */,
-				1633935F2502269A00A7A9D8 /* ContentView.swift */,
-				163393612502269B00A7A9D8 /* Assets.xcassets */,
-				163393662502269B00A7A9D8 /* LaunchScreen.storyboard */,
+				167253CC2507710C009C249B /* Constants */,
+				167253C82507293E009C249B /* ViewExtension */,
+				166D00312506140800A93AA7 /* Services */,
+				166D002D250613CA00A93AA7 /* Model */,
+				166D00252506136500A93AA7 /* View */,
+				161296C2250C6B7400552756 /* ViewModel */,
 				163393692502269B00A7A9D8 /* Info.plist */,
+				166D0030250613FE00A93AA7 /* App */,
+				1633935F2502269A00A7A9D8 /* ContentView.swift */,
 				163393632502269B00A7A9D8 /* Preview Content */,
+				1635B1E5250538D70036F449 /* FLoginApp.swift */,
 			);
 			path = Manage_Money;
 			sourceTree = "<group>";
@@ -75,6 +171,124 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		166D00252506136500A93AA7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				166D00322506448800A93AA7 /* Screen */,
+				166D002A250613A700A93AA7 /* Components */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		166D002A250613A700A93AA7 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				166D002B250613B900A93AA7 /* CustomTextField.swift */,
+				166D003C25069BD100A93AA7 /* DayPickerView.swift */,
+				161296C7250CFA5500552756 /* ErrorView.swift */,
+				1620A0B5250F27FF0054D5A3 /* LoadingPageView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		166D002D250613CA00A93AA7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1620A0B7250F53110054D5A3 /* Entities */,
+				166D002E250613E700A93AA7 /* FLogin.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		166D0030250613FE00A93AA7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				163393612502269B00A7A9D8 /* Assets.xcassets */,
+				163393662502269B00A7A9D8 /* LaunchScreen.storyboard */,
+				1633935B2502269A00A7A9D8 /* AppDelegate.swift */,
+				1633935D2502269A00A7A9D8 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		166D00312506140800A93AA7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1635B1E3250536B00036F449 /* GoogleService-Info.plist */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		166D00322506448800A93AA7 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				1620A0B9250F534B0054D5A3 /* HomepageVC */,
+				166D00352506954B00A93AA7 /* HomePageView.swift */,
+				1620A0B8250F53330054D5A3 /* AuthencationVC */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		166D003725069B0E00A93AA7 /* HomePageItemView */ = {
+			isa = PBXGroup;
+			children = (
+				167253D425078F84009C249B /* Components */,
+				166D003825069B4500A93AA7 /* MoneySpendingView.swift */,
+				166D003A25069B5900A93AA7 /* MoneyReceivedView.swift */,
+			);
+			path = HomePageItemView;
+			sourceTree = "<group>";
+		};
+		167253C325072164009C249B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				167253C425072179009C249B /* HeaderView.swift */,
+				167253C6250726D9009C249B /* NumberTextField.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		167253C82507293E009C249B /* ViewExtension */ = {
+			isa = PBXGroup;
+			children = (
+				167253C92507295D009C249B /* ViewExtension.swift */,
+			);
+			path = ViewExtension;
+			sourceTree = "<group>";
+		};
+		167253CC2507710C009C249B /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				167253CD25077129009C249B /* Images.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		167253D425078F84009C249B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				167253D525078F99009C249B /* CustomSpendingItem.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		3F61EBE3456E0D238F18A119 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6718C4D68663C973EEC9A869 /* Pods_Manage_Money.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8B3CDD1F71439913313A04A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ACA0638326C6D6DEB12C6F13 /* Pods-Manage_Money.debug.xcconfig */,
+				6ED61A564356A754D4AA3EA1 /* Pods-Manage_Money.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,15 +296,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1633936C2502269B00A7A9D8 /* Build configuration list for PBXNativeTarget "Manage_Money" */;
 			buildPhases = (
+				DD10B49B716D2F14350DA617 /* [CP] Check Pods Manifest.lock */,
 				163393542502269A00A7A9D8 /* Sources */,
 				163393552502269A00A7A9D8 /* Frameworks */,
 				163393562502269A00A7A9D8 /* Resources */,
+				E962A9C9D77FBDF98DD68A3F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Manage_Money;
+			packageProductDependencies = (
+				167253D025077746009C249B /* QGrid */,
+			);
 			productName = Manage_Money;
 			productReference = 163393582502269A00A7A9D8 /* Manage_Money.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +338,9 @@
 				Base,
 			);
 			mainGroup = 1633934F2502269A00A7A9D8;
+			packageReferences = (
+				167253CF25077746009C249B /* XCRemoteSwiftPackageReference "QGrid" */,
+			);
 			productRefGroup = 163393592502269A00A7A9D8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -134,6 +356,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				163393682502269B00A7A9D8 /* LaunchScreen.storyboard in Resources */,
+				1635B1E4250536B00036F449 /* GoogleService-Info.plist in Resources */,
 				163393652502269B00A7A9D8 /* Preview Assets.xcassets in Resources */,
 				163393622502269B00A7A9D8 /* Assets.xcassets in Resources */,
 			);
@@ -141,14 +364,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		DD10B49B716D2F14350DA617 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Manage_Money-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E962A9C9D77FBDF98DD68A3F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Manage_Money/Pods-Manage_Money-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Manage_Money/Pods-Manage_Money-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Manage_Money/Pods-Manage_Money-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		163393542502269A00A7A9D8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				166D002C250613B900A93AA7 /* CustomTextField.swift in Sources */,
+				166D00292506138B00A93AA7 /* SignInView.swift in Sources */,
+				161296C8250CFA5500552756 /* ErrorView.swift in Sources */,
+				167253C7250726D9009C249B /* NumberTextField.swift in Sources */,
 				1633935C2502269A00A7A9D8 /* AppDelegate.swift in Sources */,
+				166D00272506137600A93AA7 /* SignUpView.swift in Sources */,
 				1633935E2502269A00A7A9D8 /* SceneDelegate.swift in Sources */,
+				166D003D25069BD100A93AA7 /* DayPickerView.swift in Sources */,
+				166D003925069B4500A93AA7 /* MoneySpendingView.swift in Sources */,
+				166D003B25069B5900A93AA7 /* MoneyReceivedView.swift in Sources */,
+				167253CA2507295D009C249B /* ViewExtension.swift in Sources */,
+				1620A0BB250F62CD0054D5A3 /* AuthenViewModel.swift in Sources */,
+				1635B1E6250538D70036F449 /* FLoginApp.swift in Sources */,
+				166D002F250613E700A93AA7 /* FLogin.swift in Sources */,
+				166D00362506954B00A93AA7 /* HomePageView.swift in Sources */,
+				1620A0B6250F27FF0054D5A3 /* LoadingPageView.swift in Sources */,
+				1620A0B3250F17DB0054D5A3 /* AuthenSessionStore.swift in Sources */,
+				167253CE25077129009C249B /* Images.swift in Sources */,
+				167253D625078F99009C249B /* CustomSpendingItem.swift in Sources */,
 				163393602502269A00A7A9D8 /* ContentView.swift in Sources */,
+				1620A0B1250F179D0054D5A3 /* UserModel.swift in Sources */,
+				167253C525072179009C249B /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +566,7 @@
 		};
 		1633936D2502269B00A7A9D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACA0638326C6D6DEB12C6F13 /* Pods-Manage_Money.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -301,6 +586,7 @@
 		};
 		1633936E2502269B00A7A9D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6ED61A564356A754D4AA3EA1 /* Pods-Manage_Money.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -340,6 +626,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		167253CF25077746009C249B /* XCRemoteSwiftPackageReference "QGrid" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Q-Mobile/QGrid";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		167253D025077746009C249B /* QGrid */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 167253CF25077746009C249B /* XCRemoteSwiftPackageReference "QGrid" */;
+			productName = QGrid;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 163393502502269A00A7A9D8 /* Project object */;
 }
